@@ -1,0 +1,29 @@
+body{
+/*    background-color: black;*/
+}
+
+
+.nav-style{
+    color: black;
+    background-color: gold;
+}
+.cover{
+background-color: black;
+    color: gold;
+}
+
+
+.carousel{
+    margin: o auto;
+    text-align: center;
+}
+
+.alert-dismissible{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 56px;
+    padding-bottom: 5px;
+    left: 0px;
+}
+
