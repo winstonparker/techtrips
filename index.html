@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>TechTrips</title>
-    
+
     <script>
-        (function(html) {
+        (function (html) {
             // swap 'no-js' with 'js' on <html>
             html.classList.remove("no-js");
             html.classList.add("js");
@@ -28,51 +28,73 @@
 <body>
 
 
-    <nav class="navbar nav-style ">
-        <a class="navbar-brand nav-style" href="#">Trips</a>
+    <nav class="navbar navbar-expand-md navbar-light  nav-style ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Public Trips</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#">My Trips</a>
+                      </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#">Plan Trips</a>
+                </li>
+                </ul>
+               
+              </div>
     </nav>
 
-    <div class="alert alert-warning alert-dismissible fade show " role="alert" >
+    <div class="alert alert-warning alert-dismissible fade show " role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
         </button>
-        <strong>Welcome to TechTrips!</strong> Find, create, and explore exciting new adventures around Michigan. Find free or paid trips around the state. If you can't find a trip you like, start one and invite others.
+        <strong>Welcome to TechTrips!</strong> Find, create, and explore exciting new adventures around Michigan. Find free or paid
+        trips around the state. If you can't find a trip you like, start one and invite others.
     </div>
 
     <div class="container-fluid">
-      
-
-         <div class="row home">
-                <div class="col-md-6 cards">
-                        <div class="card" style="width: 20rem;">
-                                <img class="card-img-top" src="img/cover.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h4 class="card-title">View planned trips</h4>
-                                  <p class="card-text">Find both free and paid trips around the michigan area. Sort by price, location, availability, and more.</p>
-                                  <a href="#" class="btn btn-primary">View Trips</a>
-                                </div>
-                              </div>
-                        
-                </div>     
-                <div class="col-md-6 cards">
-                        <div class="card" style="width: 20rem;">
-                                <img class="card-img-top" src="img/IMG_3534.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h4 class="card-title">Start your own trip</h4>
-                                  <p class="card-text">Quickly start a new trip. Create a list of items, prices, and destinations. Plan private trips, or open the trips up to others!</p>
-                                  <a href="#" class="btn btn-primary">Plan my trip</a>
-                                </div>
-                              </div>
-                        
-                </div>  
-        
-        
-        </div>   
 
 
+        <div class="row home">
+            <div class="card-deck" style="width: 100%; margin: 0 auto">
+
+                <div class="card" >
+                    <img class="card-img-top" src="img/cover.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">View planned trips</h4>
+                        <p class="card-text">Find both free and paid trips around the michigan area. Sort by price, location, availability, and
+                            more.
+                        </p>
+                        <a href="#" class="btn btn-primary">View Trips</a>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <img class="card-img-top" src="img/plane.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Start your own trip</h4>
+                        <p class="card-text">Quickly start a new trip. Create a list of items, prices, and destinations. Plan private trips, or
+                            open the trips up to others!</p>
+                        <a href="#" class="btn btn-primary">Plan my trip</a>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
+
+
+
+
+    </div>
     </div>
 
 
