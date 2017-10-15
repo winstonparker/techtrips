@@ -1,0 +1,141 @@
+<!doctype html>
+<!--Winston Parker 2017-->
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>View Trips</title>
+
+    <script>
+        (function (html) {
+            // swap 'no-js' with 'js' on <html>
+            html.classList.remove("no-js");
+            html.classList.add("js");
+        })(document.documentElement);
+    </script>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css">    
+    <link rel="stylesheet" href="lib/time-picker/jquery.timepicker.min.css">    
+    <link rel="stylesheet" type="text/css" href="lib/DataTables/datatables.min.css" />
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navagation bar  -->
+    <nav class="navbar navbar-expand-md navbar-light  nav-style ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Public Trips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Trips</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Plan Trips
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid black-gold">
+        <div class="container ">
+            <h1 class="display-3 ">Plan Trips</h1>
+            <p class="lead ">Plan public or private trips. Set a price, location, list of supplies, and more.</p>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container ">
+        <form>
+            <div class="form-row ">
+                <div class="form-group col-md-6">
+                    <label for="trip-title" class="col-form-label">Trip Name</label>
+                    <input type="text" class="form-control" id="trip-title" placeholder="Backpacking Adventure through Pictured Rocks">
+                </div>
+                <div class="form-group col-md-4">
+                        <label for="trip-title" class="col-form-label">Location Name</label>
+                        <input type="text" class="form-control" id="trip-title" placeholder="Pictured Rocks">
+                </div>
+            </div>
+
+            <div class="form-row ">
+                    <div class="form-group col-md-10">
+                        <label for="trip-title" class="col-form-label">Address or GPS coordinates</label>
+                        <input type="text" class="form-control controls" id="address" placeholder="Michigan Tech">
+                    </div>
+            </div>
+
+            <div class="form-row ">
+                    <div class="form-group col-md-10"  >
+                        <div id="map"></div>
+                    </div>
+                    
+            </div>
+
+            <div class="form-row ">
+                    <div class="form-group col-md-10">
+                        <label for="trip-title" class="col-form-label">Meeting Location</label>
+                        <input type="text" class="form-control controls" id="address" placeholder="Meet by the Rosa Center">
+                    </div>
+            </div>
+
+            <div class="form-row ">
+                <div class="form-group col-md-2">
+                    <label for="start-date" class="col-form-label">Starting</label>
+                    <input type="text" class="form-control" id="start-date" placeholder="07/21/2018">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="start-time" class="col-form-label"> &nbsp</label>
+                    <input type="text" class="form-control" id="start-time" placeholder="10:30am">
+                </div>
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-2">
+                        <label for="end-date" class="col-form-label">Ending</label>
+                        <input type="text" class="form-control" id="end-date" placeholder="07/24/2018">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="end-time" class="col-form-label"> &nbsp </label>
+                        <input type="text" class="form-control" id="end-time" placeholder="7:00pm">
+                    </div>
+            </div>
+           
+           
+        </form>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/DataTables/datatables.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-9WaLXXO_EzzhXSh2THqMG2KOA5SrkBs&libraries=places&callback=initAutocomplete"
+    async defer></script>
+    <script type="text/javascript" src="lib/jquery-ui/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="lib/time-picker/jquery.timepicker.min.js"></script>        
+    <script src="js/plan.js"></script>    
+    <script src="js/maps.js"></script>
+
+</body>
+
+</html>

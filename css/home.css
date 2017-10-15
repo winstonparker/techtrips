@@ -32,6 +32,17 @@ background-color: black;
 
 .home{
     padding-top: 20px;
-    
 }
+
+.black-gold{
+    background-color: black !important;
+    color: gold !important;
+}
+
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
 
