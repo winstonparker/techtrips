@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Home </a>
+                    <a class="nav-link" href="index.html">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Public Trips</a>
@@ -48,7 +48,7 @@
                     <a class="nav-link" href="#">My Trips</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Plan Trips
+                    <a class="nav-link" href="plan.html">Plan Trips
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -66,23 +66,23 @@
     </div>
 
     <!-- Main container -->
-    <div class="container ">
-        <form>
+    <div class="container " >
+        <!-- <form action="php/book.php" method="post"> -->
             <div class="form-row ">
                 <div class="form-group col-md-6">
                     <label for="trip-title" class="col-form-label">Trip Name</label>
-                    <input type="text" class="form-control" id="trip-title" placeholder="Backpacking Adventure through Pictured Rocks">
+                    <input type="text" class="form-control" id="trip-name" name="trip-name" placeholder="Backpacking Adventure through Pictured Rocks">
                 </div>
                 <div class="form-group col-md-4">
                         <label for="trip-title" class="col-form-label">Location Name</label>
-                        <input type="text" class="form-control" id="trip-title" placeholder="Pictured Rocks">
+                        <input type="text" class="form-control" id="location-name" name="location-name" placeholder="Pictured Rocks">
                 </div>
             </div>
 
             <div class="form-row ">
                     <div class="form-group col-md-10">
                         <label for="trip-title" class="col-form-label">Address or GPS coordinates</label>
-                        <input type="text" class="form-control controls" id="address" placeholder="Michigan Tech">
+                        <input type="text" class="form-control controls" id="address" name="address" placeholder="Michigan Tech">
                     </div>
             </div>
 
@@ -95,33 +95,36 @@
 
             <div class="form-row ">
                     <div class="form-group col-md-10">
-                        <label for="trip-title" class="col-form-label">Meeting Location</label>
-                        <input type="text" class="form-control controls" id="address" placeholder="Meet by the Rosa Center">
+                        <label for="trip-title" class="col-form-label">Meeting Location (optional)</label>
+                        <input type="text" class="form-control controls" id="meeting-location" name="meeting-location" placeholder="Meet by the Rosa Center">
                     </div>
             </div>
 
             <div class="form-row ">
                 <div class="form-group col-md-2">
                     <label for="start-date" class="col-form-label">Starting</label>
-                    <input type="text" class="form-control" id="start-date" placeholder="07/21/2018">
+                    <input type="text" class="form-control" id="start-date" name="start-date" placeholder="07/21/2018">
                 </div>
                 <div class="form-group col-md-2">
                     <label for="start-time" class="col-form-label"> &nbsp</label>
-                    <input type="text" class="form-control" id="start-time" placeholder="10:30am">
+                    <input type="text" class="form-control" id="start-time" name="start-time" placeholder="10:30am">
                 </div>
                 <div class="form-group col-md-2"></div>
                 <div class="form-group col-md-2">
                         <label for="end-date" class="col-form-label">Ending</label>
-                        <input type="text" class="form-control" id="end-date" placeholder="07/24/2018">
+                        <input type="text" class="form-control" id="end-date"  name="end-date" placeholder="07/24/2018">
                     </div>
                     <div class="form-group col-md-2">
                         <label for="end-time" class="col-form-label"> &nbsp </label>
-                        <input type="text" class="form-control" id="end-time" placeholder="7:00pm">
+                        <input type="text" class="form-control" id="end-time" name="end-time" placeholder="7:00pm">
                     </div>
             </div>
+            <div class="bottom">
+                
+                <button class="btn btn-primary" id="book">Book trip!</button>
+            </div>
            
-           
-        </form>
+        <!-- </form> -->
     </div>
 
 
